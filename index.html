@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="./src/assets/style.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="boxGame displayNone">
+        <h1 class="headerText">Guess Number</h1>
+        <ul id="output"></ul>
+        <form id="prompt">
+          <input
+            id="input"
+            type="number"
+            onkeydown="javascript: return notEnter(event)"
+          />
+          <button class="checkButton">Проверить</button>
+        </form>
+        <div class="previousNums"></div>
+        <div class="hintBox"></div>
+        <div class="countBox"></div>
+        <button type="button" class="restart">Начать игру сначала</button>
+        <div class="restartBox"></div>
+      </div>
+      <div class="checkRange">
+        <h3 class="bodyText">Выбери диапазон чисел</h3>
+        <div class="ranges">
+          <div class="range" id="small">1-10</div>
+          <div class="range" id="middel">1-100</div>
+          <div class="range" id="big">1-1000</div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

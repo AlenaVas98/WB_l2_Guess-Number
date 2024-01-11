@@ -1,0 +1,115 @@
+body {
+  position: relative;
+  margin: 0;
+  background-color: #eaeccc;
+  height: 100vh;
+  cursor: default;
+}
+.root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background-color: #c3e2c2;
+  padding: 20px;
+  border-radius: 25px;
+}
+.boxGame {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bodyText,
+.headerText {
+  color: #cd8d7a;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 0;
+}
+#output {
+  list-style: none;
+  font-size: 18px;
+}
+#input {
+  border: 0;
+  outline: 0;
+  padding: 6px;
+  border-radius: 5px;
+}
+#input:focus {
+  outline: none !important;
+}
+.restart,
+.checkButton {
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: #cd8d7a;
+  color: #eaeccc;
+  border-radius: 10px;
+}
+#input:disabled,
+.checkButton:disabled {
+  background-color: rgba(128, 128, 128, 0.538);
+  color: black;
+  cursor: no-drop;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#prompt,
+.previousNums,
+.hintBox,
+.countBox,
+.restartBox {
+  margin-left: 37px;
+}
+#output li {
+  font-size: 24px;
+  font-weight: 400;
+}
+.restartBox p,
+.previousNums p,
+.hintBox p,
+.countBox p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.restart {
+  width: 300px;
+  margin-left: 37px;
+  padding: 10px;
+}
+
+.checkRange {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  gap: 40px;
+}
+.range {
+  background-color: #cd8d7a;
+  color: #eaeccc;
+  width: 80px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.ranges {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.displayNone {
+  display: none;
+}
